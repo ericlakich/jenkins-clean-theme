@@ -23,6 +23,10 @@ $jq(document).ready(function() {
     _refreshPart(id, url);
     if(id == 'executors') updateExecutors();
   }
+  
+  // update logo
+  $jq("div.logo").html("<a href='/'><img src='https://s3.amazonaws.com/gx-jenkins-theme/img/logo.png' alt='Jenkins' /></a>");
+  
 });
 
 $jq(window).resize(function() {
